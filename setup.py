@@ -16,5 +16,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/TarikMetinKaya/TMK_Library/issues"
     },
     license='MIT',
+    packages=["tinytmktoolbox"],
     install_requires=['setuptools','pandas','requests','numpy'],
 )
