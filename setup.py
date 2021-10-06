@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='tmk_tiny_library',
+    name='tmktinylibrary',
     version='0.0.1',
     author='Tarik Metin Kaya',
     author_email='tarikmetink@gmail.com',
