@@ -56,16 +56,4 @@ def dfNanDropper(dataFrame,ColumnName):
             dataFrame = dataFrame.drop(index=i)
     return dataFrame
 
-df=pd.DataFrame({
-    'name': [
-        "sds",
-        "sdsddds",
-        np.nan
-    ],
-    'surname': [
-        np.nan,
-        "dsds",
-        "ddsds"
-    ]
 
-})

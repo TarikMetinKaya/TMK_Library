@@ -1,7 +1,6 @@
 import requests
-from ignoreConfig import tinyUrlApiToken
 
-def urlShortener(URL):
+def urlShortener(URL,tinyUrlApiToken):
     try:
         url_main = f'https://api.tinyurl.com/create?api_token={tinyUrlApiToken}'
         myobj = {

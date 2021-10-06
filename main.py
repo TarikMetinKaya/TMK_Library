@@ -1,4 +1,4 @@
-import Strings.simpleStringFunctions as basicStringF
+import tinytmktoolbox.Strings.simpleStringFunctions as basicStringF
 
 txt=basicStringF.setStringLength("123456789",3,"mid")
 print(txt)
