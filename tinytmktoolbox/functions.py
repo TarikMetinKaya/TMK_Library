@@ -308,3 +308,5 @@ def addCharOnString(string,char,amount,type:"pre-post"):
     elif type == "pre-post":
         return text_which_add+string+text_which_add
 
+def emptyFunc(s):
+    print(s)

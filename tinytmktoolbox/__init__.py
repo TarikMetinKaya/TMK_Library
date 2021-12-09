@@ -1,2 +1,2 @@
-from decorators import singleton
-from functions import *
+from .decorators import singleton
+from .functions import *
