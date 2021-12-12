@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='tinytmktoolbox',
-    version='0.0.3',
+    version='0.0.4',
     author='Tarik Metin Kaya',
     author_email='tarikmetink@gmail.com',
     description='Testing installation of Package',

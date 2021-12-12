@@ -310,3 +310,28 @@ def addCharOnString(string,char,amount,type:"pre-post"):
 
 def emptyFunc(s):
     print(s)
+
+import sys
+
+def progressBar(count, total, in_progress_text='', end_progress_text=''):
+    """
+    Usage:
+    total = 100
+    i = 0
+    while i < total:
+        progressBar(i, total, 'inprogress','ended')
+        time.sleep(0.2)
+        i += 1
+
+    """
+    bar_len = 50
+    count = count + 1
+    filled_len = int(round(bar_len * count / float(total)))
+
+    percents = round(100.0 * count / float(total), 1)
+    bar = '■' * filled_len + '□' * (bar_len - filled_len)
+    if not percents == 100:
+        sys.stdout.write(f"[{bar}] {percents}% ... {in_progress_text}\r")
+    else:
+        sys.stdout.write(f"[{bar}] {percents}% ... {end_progress_text}\r")
+    sys.stdout.flush()
