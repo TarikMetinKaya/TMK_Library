@@ -335,3 +335,16 @@ def progressBar(count, total, in_progress_text='', end_progress_text=''):
     else:
         sys.stdout.write(f"[{bar}] {percents}% ... {end_progress_text}\r")
     sys.stdout.flush()
+
+
+import json
+def jsonSaver(path,fileName,data):
+
+    with open(f'{path}/{fileName}.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+def jsonReader(path):
+    f = open(f'{path}')
+    data = json.load(f)
+    f.close()
+    return data
